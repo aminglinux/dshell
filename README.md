@@ -42,7 +42,7 @@ DeepSeek（二次分析真实执行结果，流式）
 
 ```text
 dshell/
-├── dshell_auto_stream.py   # 主程序（自动执行 + 流式输出）
+├── dshell.py   # 主程序（自动执行 + 流式输出）
 ├── system_prompt.txt       # 运维安全 Prompt
 └── README.md
 ```
@@ -81,14 +81,14 @@ pip install requests
 ### 直接运行
 
 ```bash
-python dshell_auto_stream.py "找出当前 CPU 使用率最高的 5 个进程"
+python dshell.py "找出当前 CPU 使用率最高的 5 个进程"
 ```
 
 ### 建议方式（别名）
 
 ```bash
-chmod +x dshell_auto_stream.py
-sudo ln -s $(pwd)/dshell_auto_stream.py /usr/local/bin/dshell
+chmod +x dshell.py
+sudo ln -s $(pwd)/dshell.py /usr/local/bin/dshell
 ```
 
 之后：
